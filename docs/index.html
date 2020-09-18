@@ -22,24 +22,31 @@
   <header class="header" data-aos="zoom-in-down" data-aos-duration="2000">
     <div class="container">
       <div class="header__inner">
-        <nav class="header__nav" data-aos="zoom-in-down" data-aos-duration="1200">
+        <div class="header__top">
           <div class="header__logo">
             <a class="header__logo-link" href="#">
               <img src="images/logo.svg" alt="Trafico">
             </a>
           </div>
-          <ul class="header__list">
-            <li class="header__list-item"><a href="#" class="header__list-link">ABOUT</a></li>
-            <li class="header__list-item"><a href="#" class="header__list-link">HOW TO</a></li>
-            <li class="header__list-item"><a href="#" class="header__list-link">FAQS</a></li>
-            <li class="header__list-item--btn"><a href="#" class="header__list-link">CONTACT US</a></li>
-          </ul>
-        </nav>
-        <h1 class="header__title" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1200">
+          <nav class="header__nav" data-aos="zoom-in-down" data-aos-duration="1200">
+            <ul class="header__list">
+              <li class="header__list-item"><a href="#" class="header__list-link">ABOUT</a></li>
+              <li class="header__list-item"><a href="#" class="header__list-link">HOW TO</a></li>
+              <li class="header__list-item"><a href="#" class="header__list-link">FAQS</a></li>
+              <li class="header__list-item--btn"><a href="#" class="header__list-link">CONTACT US</a></li>
+            </ul>
+            <div class="hamburger">
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <h1 class="header__title aos-fix" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1200">
           Your awesome traffic permit consultant.
         </h1>
-        <div class="header__btn" data-aos="fade-left" data-aos-delay="1500" data-aos-duration="1200">
-          <a class="header__btn-link" href="#">GET STARTED</a>
+        <div class="header__btn aos-fix " data-aos="fade-left" data-aos-delay="1500" data-aos-duration="1200">
+          <a class="header__btn-link " href="#">GET STARTED</a>
         </div>
       </div>
     </div>
@@ -51,12 +58,10 @@
           <h4 class="about__title title">
             ABOUT US
           </h4>
-
           <p class="about__text">
             The occupational traffic permit is one of the most important things in the company when carrying out freight
             transport. In fact, it is a prerequisite for doing business traffic at all.
           </p>
-
           <div class="about__attention">
             <p class="about__attention-text">
               How do you do when you need to obtain
@@ -64,7 +69,7 @@
             </p>
           </div>
         </div>
-        <div class="about__right" data-aos="fade-left" data-aos-duration="1900">
+        <div class="about__right" data-aos="fade-left" data-aos-duration="1900" data-aos-offset="10">
           <img class="about__right-image" src="images/about-right.svg" alt="About Us">
         </div>
       </div>
@@ -73,7 +78,7 @@
   <section class="apply">
     <div class="container">
       <div class="apply__inner">
-        <div class="apply__left" data-aos="fade-right" data-aos-duration="1900">
+        <div class="apply__left" data-aos="fade-right" data-aos-duration="1900" data-aos-offset="10">
           <img class="apply__left-image" src="images/how-to-apply-left.svg" alt="how to apply">
         </div>
         <div class="apply__right" data-aos="fade-left" data-aos-duration="1900">
@@ -93,17 +98,18 @@
   <section class="faq">
     <div class="container">
       <div class="faq__top">
-        <div class="faq__top-left">
-          <h4 class="faq__top-suptitle title" data-aos="fade-right" data-aos-duration="1500">faq</h4>
-          <h2 class="faq__title" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1500">
+        <div class="faq__top-left" data-aos="slide-right" data-aos-offset="0" data-aos-duration="500">
+          <h4 class="faq__top-suptitle title">faq
+          </h4>
+          <h2 class="faq__title">
             Questions and Answers on Professional Traffic Permits:
           </h2>
         </div>
-        <div class="faq__top-right" data-aos="fade-left" data-aos-duration="900">
+        <div class="faq__top-right" data-aos="fade-left" data-aos-offset="0" data-aos-duration="900">
           <img class="faq__top-right-image" src="images/faq-right.svg" alt="faq right">
         </div>
       </div>
-      <div class="faq__bottom" data-aos="fade-up" data-aos-offset="110" data-aos-duration="1900">
+      <div class="faq__bottom" data-aos="fade-up" data-aos-offset="0" data-aos-duration="800">
         <div class="faq__bottom-left">
           <div class="faq__item is-active">
             <h4 class="faq__item-title">
@@ -250,7 +256,8 @@
             <div class="swiper-slide">
               <div class="clients__item-box">
                 <p class="clients__text">
-                  An A-Line, or access restriction deed is a property right that has been obtained by CDOT for the sole
+                  An A-Line, or access restriction deed is a property right that has been obtained by CDOT for the
+                  sole
                   purpose of prohibiting direct
                 </p>
                 <div class="clients__item-footer">
@@ -286,12 +293,12 @@
     <div class="footer__inner">
       <div class="footer__container">
         <div class="footer__top">
-          <div class="footer__top-left" data-aos="fade-right" data-aos-offset="100" data-aos-duration="1500">
+          <div class="footer__top-left" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1500">
             <p class="footer__top-text">
               We provide traffic management consultants so you get started quickly, contact us for a quote today!
             </p>
           </div>
-          <div class="footer__top-right" data-aos="fade-left" data-aos-duration="1500">
+          <div class="footer__top-right" data-aos="fade-up" data-aos-duration="1500">
             <form class="footer__form" id="footer__form" method="" action="">
               <label class="footer__form-label" for="name">
                 Name
@@ -307,12 +314,12 @@
           </div>
         </div>
         <div class="footer__bottom">
-          <div class="footer__bottom-left" data-aos="fade-right" data-aos-offset="111" data-aos-duration="1500">
+          <div class="footer__bottom-left" data-aos="fade-up" data-aos-offset="111" data-aos-duration="1500">
             <a href="#" class="footer__logo">
               <img src="images/logo.svg" alt="Trafico">
             </a>
           </div>
-          <div class="footer__bottom-right" data-aos="fade-left" data-aos-offset="111" data-aos-duration="1500">
+          <div class="footer__bottom-right" data-aos="fade-up" data-aos-offset="111" data-aos-duration="1500">
             <ul class="footer__menu">
               <li class="footer__menu-item">
                 <a href="#" class="footer__menu-link">ABOUT</a>

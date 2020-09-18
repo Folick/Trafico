@@ -5,7 +5,7 @@ $(function () {
   $(".hamburger").on("click", function (e) {
     $(this).toggleClass("is-active"),
       e.preventDefault(),
-      $(".header__menu-list").toggleClass("is-active")
+      $(".header__list").toggleClass("is-active")
   });
   $('a[href^="#"]').on('click', function () {
     let anchor = $(this).attr('href');
@@ -39,15 +39,25 @@ $(function () {
   });
 });
 var mySwiper = new Swiper('.swiper-container', {
-  slidesPerView: 'auto',
   centeredSlides: true,
-  spaceBetween: 30,
+  slidesPerView: 'auto',
+  slidesPerView: 1,
+  spaceBetween: 20,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    1170: {
+      slidesPerView: 3,
+    },
+  }
 });
 AOS.init({
+  // disable:true,
   offset: 333,
   once: true,
   mirror: false,
