@@ -47,3 +47,8 @@ var mySwiper = new Swiper('.swiper-container', {
     prevEl: '.swiper-button-prev'
   },
 });
+AOS.init({
+  offset: 333,
+  once: true,
+  mirror: false,
+});
